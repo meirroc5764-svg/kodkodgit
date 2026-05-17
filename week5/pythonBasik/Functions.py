@@ -46,17 +46,35 @@
 #     return revers 
 #8)
 # def move_zero(n):
-#     zero = []
 #     for i in n:
 #         if i == 0:
 #             n.remove(i)
 #             n.append(i)
-#     for i in zero:
-#         n.append(i)
 #     return n
-    
-                
-
-
+#9)
+# def information(list_number):
+#     big_num = max(list_number)
+#     small_num = min(list_number)
+#     totall = sum(list_number)
+#     averge = totall / len(list_number)
+#     # for i in list_number:
+#     #     sum += i
+#     return big_num, small_num, totall, averge
+#10)
+# def reverse_list(number_list):
+#     revers_number_list = []
+#     for i in number_list[::-1]:
+#         revers_number_list.append(i)
+#     return revers_number_list
+#11)
+def list_without_duplicates(user_list):
+    new_list = []
+    for i in user_list:
+        if i in new_list:
+            continue
+        else:
+            new_list.append(i)
+    return new_list
+print(list_without_duplicates([1,1,2,2,3,3,4,4,5,5,6,7,7,8,8,9,9,]))
 
     
