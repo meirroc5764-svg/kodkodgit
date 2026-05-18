@@ -66,15 +66,14 @@
 #     for i in number_list[::-1]:
 #         revers_number_list.append(i)
 #     return revers_number_list
-#11)
-def list_without_duplicates(user_list):
-    new_list = []
-    for i in user_list:
-        if i in new_list:
-            continue
-        else:
-            new_list.append(i)
-    return new_list
-print(list_without_duplicates([1,1,2,2,3,3,4,4,5,5,6,7,7,8,8,9,9,]))
+ #11)
+# def list_without_duplicates(user_list):
+#     new_list = []
+#     for i in user_list:
+#         if i in new_list:
+#             continue
+#         else:
+#             new_list.append(i)
+#     return new_list
 
     
