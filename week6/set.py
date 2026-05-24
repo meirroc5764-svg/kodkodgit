@@ -60,12 +60,3 @@ def symmetric_difference(user_list1, user_list2):
     for number in user_list2:
         new_list.append(number)        
     return new_list           
-
-
-
-
-user_text = "hello the hello"
-user_list = [1,2,3,4,5]
-user_list2 = [2,3,4,5,6]
-print(symmetric_difference(user_list,user_list2))
-print(distinct_words(user_text))

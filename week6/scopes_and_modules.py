@@ -2,6 +2,7 @@ from datetime import datetime as dt
 import math as m
 from geometry import circule
 from geometry import rectangle
+from mathutils import cube, square
 #1)
 count = 0
 def bump():
@@ -34,8 +35,12 @@ outer()
 print(x)
 
 #4)
-list = [1, 2, 3]
+my_list = [1, 2, 3]
 print(list(range(5)))
+
+#6)
+print(cube(3))
+print(square(5))
 
 #7)
 print(dt.now())
