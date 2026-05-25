@@ -32,7 +32,6 @@ def load_tasks(filename):
 
     return lst
 
-#print(load_tasks("task.txt"))
 #2)
 def save_tasks(filename, tasks):
     with open(filename, "a", encoding="utf-8") as f:
@@ -40,7 +39,6 @@ def save_tasks(filename, tasks):
             f.write(f"\n{dict["id"]}|{dict["status"]}|{dict["desk"]}")
     return         
 
-#save_tasks("task.txt",load_tasks("task.txt"))
 
 #3)
 def add_task(filename, description):
@@ -86,7 +84,6 @@ def complete_task(filename, task_id):
         return "no have task"
     else:
         return "file not found"    
-complete_task("task.txt", 1)
 
 #5)
 def list_tasks(filename):
@@ -105,3 +102,37 @@ def list_tasks(filename):
             print(f"{dict["id"]}|{dict["desk"]}|{pending}")
     return
 list_tasks("task.txt")
+def main():
+    FILENAME = "tasks.txt"
+
+    while True:
+        print('\n=== To-Do List Manager ===')
+        print('1. הצג משימות')
+        print('2. הוסף משימה')
+        print('3. סמן כהושלם')
+        print('4. יציאה')
+
+        choice = input('בחירה: ')
+
+        if choice == '1':
+            list_tasks(FILENAME)
+
+        elif choice == '2':
+            desc = input('תיאור המשימה: ')
+            add_task(FILENAME, desc)
+            print('המשימה נוספה!')
+
+        elif choice == '3':
+            task_id = int(input('משימה מספר: '))
+            complete_task(FILENAME, task_id)
+
+        elif choice == '4':
+            print('להתראות!')
+            break
+
+        else:
+            print('בחירה לא תקינה')
+
+
+if __name__ == '__main__':
+    main()
