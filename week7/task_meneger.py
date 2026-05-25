@@ -101,7 +101,7 @@ def list_tasks(filename):
         else:
             print(f"{dict["id"]}|{dict["desk"]}|{pending}")
     return
-list_tasks("task.txt")
+
 def main():
     FILENAME = "tasks.txt"
 
