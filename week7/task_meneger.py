@@ -12,26 +12,25 @@ def load_tasks(filename):
     try:
         with open(filename, "r", encoding="utf-8") as f:
             lines = f.readlines()
-            
+
             for line in lines:
                 dict_task = {}
-                
+
                 if not line.strip():
                     continue
-                
+
                 num,status,name = line.strip().split("|")
 
                 dict_task["id"] = num
                 dict_task["status"] = status
                 dict_task["desk"] = name
-                
+
                 lst.append(dict_task)
-    
+
     except FileNotFoundError:
         print(f"{filename} not found")
-    
-    finally:
-        return lst
+
+    return lst
 
 #print(load_tasks("task.txt"))
 #2)
@@ -88,3 +87,21 @@ def complete_task(filename, task_id):
     else:
         return "file not found"    
 complete_task("task.txt", 1)
+
+#5)
+def list_tasks(filename):
+    '''
+    :מציגה את כל המשימות בפורמט מסודר
+    ]✓[ 2 [ 2 |לכת תרתרג 1
+    ] [ 3 | לסיים את הפרויקט
+    '''
+    done_simbol = ["✅"]
+    pending = []
+    list_of_dict_task =load_tasks(filename)
+    for dict in list_of_dict_task:
+        if dict["status"] == "done" or dict["status"] == "DONE":
+            print(f"{dict["id"]}|{dict["desk"]}|{done_simbol}")
+        else:
+            print(f"{dict["id"]}|{dict["desk"]}|{pending}")
+    return
+list_tasks("task.txt")
