@@ -1,0 +1,22 @@
+2026-05-25 17:24:03,378| INFO|__main__|start function add a=5,b=6
+2026-05-25 17:24:03,378| INFO|__main__|the function successfully add a=5, b=6
+2026-05-25 17:24:33,530| INFO|__main__|start function add a=5,b=s
+2026-05-25 17:24:33,533| INFO|__main__|the function successfully add a=5, b=s
+2026-05-25 17:24:33,533| ERROR|__main__|adding eror unsupported operand type(s) for +: 'int' and 'str'
+2026-05-25 17:38:10,842| INFO|__main__|start function add a=5,b=6
+2026-05-25 17:38:10,842| INFO|__main__|the function successfully add a=5, b=6
+2026-05-25 17:38:33,591| INFO|__main__|start function add a=5,b=6
+2026-05-25 17:38:33,591| INFO|__main__|the function successfully add a=5, b=6
+2026-05-25 17:38:33,591| INFO|__main__|user id=1234 ahd time=<class 'datetime.datetime'>
+2026-05-25 17:39:03,777| INFO|__main__|start function add a=5,b=6
+2026-05-25 17:39:03,778| INFO|__main__|the function successfully add a=5, b=6
+2026-05-25 17:39:03,778| INFO|__main__|user id=1234 ahd time=<class 'datetime.datetime'>
+2026-05-25 17:39:15,629| INFO|__main__|start function add a=5,b=6
+2026-05-25 17:39:15,630| INFO|__main__|the function successfully add a=5, b=6
+2026-05-25 17:39:15,630| INFO|__main__|user id=1234 ahd time=<method 'time' of 'datetime.datetime' objects>
+2026-05-25 17:39:25,764| INFO|__main__|start function add a=5,b=6
+2026-05-25 17:39:25,764| INFO|__main__|the function successfully add a=5, b=6
+2026-05-25 17:39:25,764| INFO|__main__|user id=1234 ahd time=<built-in method now of type object at 0x00007FFB4E8A9270>
+2026-05-25 17:40:26,040| INFO|__main__|start function add a=5,b=6
+2026-05-25 17:40:26,040| INFO|__main__|the function successfully add a=5, b=6
+2026-05-25 17:40:26,040| INFO|__main__|user id=1234 ahd time=2026-05-25 17:40:26.040916
