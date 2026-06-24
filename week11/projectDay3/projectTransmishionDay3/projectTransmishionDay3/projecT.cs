@@ -66,13 +66,13 @@ namespace Day3
         static int? ChekInput2()
         {
             bool test = false;
-            int? userInt = 0;
+            int userInt = 0;
             while (test == false)
             {
                 string userIn = Console.ReadLine();
                 if (userIn == null || userIn == "null")
                     return null;
-                else if (int.TryParse(userIn, out int userInt))
+                else if (int.TryParse(userIn, out userInt))
                     test = true;
                 else
                     Console.WriteLine("enter number or null");
@@ -99,7 +99,7 @@ namespace Day3
 
             }
         }
-        static void ShowAll(List<int> lid, List<int?> StrengS, List<string> Classif)
+        static void ShowAll(List<int> lid, List<int?> StrengS, List<Classification> Classif)
         {
             for (int i = 0; i == lid.Count; i++)
             {
