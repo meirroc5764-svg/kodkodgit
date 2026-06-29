@@ -138,7 +138,7 @@ namespace projectDay1
         {
             if(AcountType == "Saving")
             {
-                Balance += (_balance / 100 * 2);
+                Balance += ((_balance / 100) * 2);
             }
         }
         public void PrintTransactionHistory()

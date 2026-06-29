@@ -10,9 +10,23 @@ namespace day2
         static List<int> trackId = new List<int>();
         static List<int> trackSpeed = new List<int>();
         static List<string> trackHeading = new List<string>();
-
+        
         static void Main()
         {
+            while(true)
+            {
+                Console.WriteLine("====Menu====");
+                Console.WriteLine("1. show all track");
+                Console.WriteLine("2. add track");
+                Console.WriteLine("3. remove track by id");
+                Console.WriteLine("4. More");
+                
+                
+                
+                break;
+
+            }
+            
 
         }
         static int TestUserInt(string userInput)
