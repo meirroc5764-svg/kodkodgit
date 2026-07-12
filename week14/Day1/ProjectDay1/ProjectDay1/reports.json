@@ -1,0 +1,12 @@
+[
+  {
+    "Id": "1",
+    "Category": "SIGNAL",
+    "Priority": "3\r"
+  },
+  {
+    "Id": "2",
+    "Category": "IMAGERY",
+    "Priority": "5\r"
+  }
+]

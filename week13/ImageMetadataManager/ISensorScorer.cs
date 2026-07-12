@@ -14,4 +14,9 @@ namespace Project.Sensor
     {
         void CalibrateThermal();
     }
+    public interface Imagesever
+    {
+        public void Save(ISensorScore sensor);
+        public void count();
+    }
 }

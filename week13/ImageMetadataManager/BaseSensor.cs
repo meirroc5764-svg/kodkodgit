@@ -31,10 +31,6 @@ namespace Project.Sensor
 
         public abstract string GetSensorName();
 
-        public void SafeToFile(string path)
-        {
-            File.WriteAllText(path, ToLogString());
-        }
         public string ToLogString()
         {
             return $"Image {Id}: {ClodeClover}% cloud[{GetSensorName()}] and Score:{Score}.";
